@@ -9,9 +9,18 @@ Requires:
  - [Docker for Mac][docker]
  - [Docker Compose 1.8.1+][docker-compose]
 
+
+Run the below command in your terminal to bring up a Screwdriver cluster locally.
+
 ```bash
 $ python <(curl -L https://git.io/screwdriver-box)
 ```
+You will be prompted to enter your desired SCM provider as well as your Client ID and Client Secret. Afterwards, type `y` to launch Screwdriver!
+
+
+For further documentation please see:
+
+https://docs.screwdriver.cd/cluster-management/running-locally
 
 [docker-compose]: https://www.docker.com/products/docker-compose
 [docker]: https://www.docker.com/products/docker
