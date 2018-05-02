@@ -292,11 +292,9 @@ def main():
     A few more things to note:
       - To stop/reset Screwdriver
         $ docker-compose -p screwdriver down
-      - To rebuild Screwdriver
-        $ docker-compose build --no-cache
       - If your internal IP changes, update the docker-compose.yml and your SCM OAuth application
       - In-a-box does not support Webhooks including PullRequests for triggering builds
-      - For further documentation, see https://docs.screwdriver.cd/cluster-management/running-locally
+      - To create your own cluster, see https://docs.screwdriver.cd/cluster-management/kubernetes
       - For help with this and more, find us on Slack at https://slack.screwdriver.cd
 
 ❤️   Screwdriver Crew
