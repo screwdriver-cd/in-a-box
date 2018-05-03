@@ -18,9 +18,8 @@ $ python <(curl -L https://git.io/screwdriver-box)
 You will be prompted to enter your desired SCM provider as well as your Client ID and Client Secret. Afterwards, type `y` to launch Screwdriver!
 
 
-For further documentation please see:
-
-https://docs.screwdriver.cd/cluster-management/running-locally
+For further documentation please see: https://docs.screwdriver.cd/cluster-management/running-locally
+To set up your own cluster, see: https://docs.screwdriver.cd/cluster-management/kubernetes
 
 [docker-compose]: https://www.docker.com/products/docker-compose
 [docker]: https://www.docker.com/products/docker

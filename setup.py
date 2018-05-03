@@ -294,6 +294,7 @@ def main():
         $ docker-compose -p screwdriver down
       - If your internal IP changes, update the docker-compose.yml and your SCM OAuth application
       - In-a-box does not support Webhooks including PullRequests for triggering builds
+      - To create your own cluster, see https://docs.screwdriver.cd/cluster-management/kubernetes
       - For help with this and more, find us on Slack at https://slack.screwdriver.cd
 
 ❤️   Screwdriver Crew
