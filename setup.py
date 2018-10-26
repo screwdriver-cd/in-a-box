@@ -275,6 +275,7 @@ def main():
         Template('''
     Just run the following commands to get started!
       $ docker-compose pull
+      $ docker pull screwdrivercd/launcher:stable
       $ docker-compose -p screwdriver up -d
       $ open http://${ip}:9000
     ''').safe_substitute(fields)
@@ -282,6 +283,7 @@ def main():
     prompt = get_input('    Would you like to run them now? (y/n) ')
     if prompt.lower() == 'y':
         call(['docker-compose', 'pull'])
+        call(['docker', 'pull', 'screwdrivercd/launcher:stable'])
         call(['docker-compose', '-p', 'screwdriver', 'up', '-d'])
         call(['open', Template('http://${ip}:9000').safe_substitute(fields)])
         print('\n👍   Launched!')
