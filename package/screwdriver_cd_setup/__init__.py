@@ -11,7 +11,7 @@ import socket
 import sys
 import distutils.spawn
 from string import Template
-from subprocess import check_output, call, STDOUT
+from subprocess import check_output, call, STDOUT, CalledProcessError
 try:
     from urllib.parse import urlparse
 except ImportError:
