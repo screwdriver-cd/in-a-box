@@ -16,4 +16,4 @@ test =
 
 [options.entry_points]
 console_scripts =
-    screwdriver_in_a_box=screwdriver_cd_setup:main
+    screwdriver_in_a_box=screwdriver_cd:main

@@ -1,1 +1,1 @@
-package/screwdriver_in_a_box/__init__.py
+package/screwdriver_cd_setup/__init__.py
