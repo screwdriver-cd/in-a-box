@@ -16,15 +16,15 @@ class TestInABoxModule(VCRTestCase):
             os.environ['DOCKER_HOST'] = self._docker_host
 
     def test_import(self):
-        import screwdriver_in_a_box
+        import screwdriver_cd_setup
 
     def test__get_ip_address__docker_host(self):
-        import screwdriver_in_a_box
+        import screwdriver_cd_setup
         os.environ['DOCKER_HOST'] = 'tcp://foo.bar.com:2375'
         self.assertEqual(screwdriver_in_a_box.get_ip_address(), 'foo.bar.com')
 
     def test__get_ip_address__no_docker_host(self):
-        import screwdriver_in_a_box
+        import screwdriver_cd_setup
         result = screwdriver_in_a_box.get_ip_address(), 'foo.bar.com'
         self.assertIsInstance(result, str)
 
