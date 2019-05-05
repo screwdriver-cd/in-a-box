@@ -283,7 +283,10 @@ def main():
     if prompt.lower() == 'y':
         call(['docker-compose', 'pull'])
         call(['docker-compose', '-p', 'screwdriver', 'up', '-d'])
-        call(['open', Template('http://${ip}:9000').safe_substitute(fields)])
+        try:
+            call(['open', Template('http://${ip}:9000').safe_substitute(fields)])
+        except CalledProcessError:
+            pass
         print('\n👍   Launched!')
     else:
         print('\n👍   Skipping launch (for now)')
@@ -303,4 +306,5 @@ def main():
 
 if __name__ == "__main__":
     sys.stdin.flush()
+    sys.stdin = open("/dev/tty")
     main()
