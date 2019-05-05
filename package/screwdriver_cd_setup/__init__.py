@@ -285,7 +285,7 @@ def main():
         call(['docker-compose', '-p', 'screwdriver', 'up', '-d'])
         try:
             call(['open', Template('http://${ip}:9000').safe_substitute(fields)])
-        except CalledProcessError:
+        except (CalledProcessError, FileNotFoundError):
             pass
         print('\n👍   Launched!')
     else:
