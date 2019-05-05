@@ -1,5 +1,5 @@
 jobs:
-  main:
+  validate_test:
     image: ubuntu
     requires: [~pr, ~commit]
     # Steps definition block.
