@@ -1,6 +1,6 @@
 jobs:
   validate_test:
-    image: ubuntu
+    image: quay.io/pypa/manylinux2010_x86_64
     requires: [~pr, ~commit]
     # Steps definition block.
     steps:
