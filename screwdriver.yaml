@@ -5,7 +5,15 @@ jobs:
     # Steps definition block.
     steps:
       - begin: echo begin
-      - update: apt-get -y update
+      - update: |
+          if [ -e /usr/bin/apt-get ]; then
+              apt-get -y update
+          fi
+      - install_python: |
+          if [ -e /usr/bin/apt-get ]; then
+              apt-get install -y python3 python3-dev python3-venv python3-pip
+          fi
+      - setup_path: export PATH=/opt/python/cp37-cp37m/bin:/opt/python/cp36-cp36m/bin:$PATH
       - install_python: apt-get install -y python3 python3-dev python3-venv python3-pip
       - install_tox: python3 -m pip install tox
       - run_tox: |
