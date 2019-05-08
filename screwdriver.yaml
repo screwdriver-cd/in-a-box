@@ -8,3 +8,6 @@ jobs:
   validate_test:
     template: python/validate_unittest
     requires: [~commit, ~pr]
+  validate_lint:
+    template: python/validate_lint
+    requires: [~commit, ~pr]
