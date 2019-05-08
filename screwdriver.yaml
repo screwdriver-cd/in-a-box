@@ -12,3 +12,4 @@ jobs:
   validate_lint:
     template: python/validate_lint
     requires: [~commit, ~pr]
+
