@@ -151,6 +151,7 @@ def generate_jwt():
 
 # Ask to select a SCM provider
 def select_scm_provider():
+    """Prompt the user for the scm provider to use"""
     scm_plugins = ['github', 'gitlab', 'bitbucket']
     while True:
         prompt = get_input(
