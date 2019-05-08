@@ -194,7 +194,8 @@ def generate_scm_config(scm_plugin, ip):
         start_url = 'https://bitbucket.org/account/user/<your username>/oauth-consumers/new'
         homepage_url_msg = "For 'URL' put http://" + ip + ':9000'
         callback_url = 'Callback URL'
-        additional_process = "for 'Permissions' enable Read checkbox for Repositories, Account and Pull requests"
+        additional_process = "for 'Permissions' enable Read checkbox for Repositories, Account" \
+                             " and Pull requests"
         client_id_name = 'Key'
         client_secret_name = 'Secret'
         avatar = 'bitbucket.org/account/*/avatar/*'
