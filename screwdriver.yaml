@@ -6,3 +6,4 @@ jobs:
           cd package
           tox
           cd ..
+    requires [~commit, ~pr]
