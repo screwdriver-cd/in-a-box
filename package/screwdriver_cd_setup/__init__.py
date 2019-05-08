@@ -94,7 +94,7 @@ def get_input(prompt=None):
     EOFError - If the user hits EOF (*nix: Ctrl-D, Windows: Ctrl-Z+Return)
     """
     if sys.version_info.major < 3:
-        return raw_input(prompt)
+        return raw_input(prompt)  # pylint: disable=E0602
     return input(prompt)
 
 
