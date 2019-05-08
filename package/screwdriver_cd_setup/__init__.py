@@ -165,7 +165,7 @@ def select_scm_provider():
         'scm_plugin': scm_plugin
     }
 
-def generate_scm_config(scm_plugin, ip): # pylint disable=C0103
+def generate_scm_config(scm_plugin, ip): # pylint: disable=C0103
     """
     Generate OAuth credentials from SCM
 
