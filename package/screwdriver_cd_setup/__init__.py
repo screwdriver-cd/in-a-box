@@ -153,7 +153,9 @@ def generate_jwt():
 def select_scm_provider():
     scm_plugins = ['github', 'gitlab', 'bitbucket']
     while True:
-        prompt = get_input('📤   Which SCM provider would you like to use? (github/gitlab/bitbucket) ')
+        prompt = get_input(
+            '📤   Which SCM provider would you like to use? (github/gitlab/bitbucket) '
+        )
         scm_plugin = prompt.lower()
         if scm_plugin in scm_plugins:
             break
@@ -190,7 +192,7 @@ def generate_scm_config(scm_plugin, ip):
     elif scm_plugin == 'bitbucket':
         service_name = 'Bitbucket.org'
         start_url = 'https://bitbucket.org/account/user/<your username>/oauth-consumers/new'
-        homepage_url_msg =  "For 'URL' put http://" + ip + ':9000'
+        homepage_url_msg = "For 'URL' put http://" + ip + ':9000'
         callback_url = 'Callback URL'
         additional_process = "for 'Permissions' enable Read checkbox for Repositories, Account and Pull requests"
         client_id_name = 'Key'
