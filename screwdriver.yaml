@@ -1,0 +1,15 @@
+version: 4
+shared:
+  steps:
+      - prevalidate_code: cd package
+      - postvalidate_code: cd $SD_SOURCE_DIR
+
+jobs:
+  validate_test:
+    template: python/validate_unittest
+    requires: [~commit, ~pr]
+    
+  validate_lint:
+    template: python/validate_lint
+    requires: [~commit, ~pr]
+
