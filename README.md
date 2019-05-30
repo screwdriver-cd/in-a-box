@@ -8,7 +8,7 @@ Requires:
  - [Docker][docker]
  - [Docker Compose 1.8.1+][docker-compose]
 
-1. [Login to Docker](https://docs.docker.com/engine/reference/commandline/login).
+1. [Login to Docker](https://docs.docker.com/engine/reference/commandline/login) with your Docker username (not email).
 2. Run the below command in your terminal to bring up a Screwdriver cluster locally.
 
 ```bash
