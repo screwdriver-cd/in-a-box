@@ -12,7 +12,7 @@ Requires:
 Run the below command in your terminal to bring up a Screwdriver cluster locally.
 
 ```bash
-$ python <(curl -L https://git.io/screwdriver-box)
+$ python <(curl -L https://git.io/sd-in-a-box)
 ```
 You will be prompted to enter your desired SCM provider as well as your Client ID and Client Secret. Afterwards, type `y` to launch Screwdriver!
 
