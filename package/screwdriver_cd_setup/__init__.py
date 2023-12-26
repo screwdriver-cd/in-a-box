@@ -134,7 +134,7 @@ def generate_jwt():
         Dictionary with public_key and private_key
     """
     check_output(
-        ['openssl', 'genrsa', '-out', 'jwt.pem', '1024'], stderr=STDOUT
+        ['openssl', 'genrsa', '-out', 'jwt.pem', '2048'], stderr=STDOUT
     )
     check_output(
         ['openssl', 'rsa', '-in', 'jwt.pem', '-pubout', '-out', 'jwt.pub'],
