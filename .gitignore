@@ -102,3 +102,5 @@ ENV/
 
 # Reports
 cobertura.xml
+
+.idea
